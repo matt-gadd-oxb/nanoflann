@@ -2458,8 +2458,6 @@ class KDTreeSingleIndexDynamicAdaptor
         if (DIM > 0) dim_ = DIM;
         leaf_max_size_ = params.leaf_max_size;
         init();
-        const size_t num_initial_points = dataset_.kdtree_get_point_count();
-        if (num_initial_points > 0) { addPoints(0, num_initial_points - 1); }
     }
 
     /** Deleted copy constructor*/
