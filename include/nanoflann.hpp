@@ -1867,10 +1867,6 @@ public:
       dim = DIM;
     m_leaf_max_size = params.leaf_max_size;
     init();
-    const size_t num_initial_points = dataset.kdtree_get_point_count();
-    if (num_initial_points > 0) {
-      addPoints(0, num_initial_points - 1);
-    }
   }
 
   /** Deleted copy constructor*/
